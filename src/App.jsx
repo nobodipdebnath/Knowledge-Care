@@ -1,12 +1,19 @@
 
 import './App.css'
+import { Blogs } from './Components/Blogs/Blogs'
+import { BookMarks } from './Components/BookMarks/BookMarks'
+import { Header } from './Components/Header/Header'
 
 function App() {
 
 
   return (
     <>
-    <h1 className="text-center font-bold text-2xl ">Hello</h1>
+      <Header></Header>
+      <main className='md:flex '>
+        <Blogs></Blogs>
+        <BookMarks></BookMarks>
+      </main>
     </>
   )
 }
